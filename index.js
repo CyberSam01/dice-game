@@ -48,8 +48,8 @@ function startGame() {
         player1Scoreboard.textContent = player1Score
         player1Dice.classList.remove("active")
         player2Dice.classList.add("active")
-        message.textContent = `${player2Input} is aan de beurt`
-        setWinner(player2Input)
+        message.textContent = `${player1Input} is aan de beurt`
+        setWinner(player1Input)
 
     } else if (currPlayer.id == player2Dice.id){
         player2Dice.textContent = randNum
@@ -57,8 +57,8 @@ function startGame() {
         player2Scoreboard.textContent = player2Score
         player2Dice.classList.remove("active")
         player1Dice.classList.add("active")
-        message.textContent = `${player1Input} is aan de beurt`
-        setWinner(player1Input)
+        message.textContent = `${player2Input} is aan de beurt`
+        setWinner(player2Input)
     }
 }
 
