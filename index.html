@@ -3,25 +3,34 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container">
-            <h1 id="message">Player 1 Turn</h1>
+        <div class="container" id="startScreen">
+            <h1>Enter your names:</h1>
+            <input type="text" name="player1" id="player1Input" placeholder="player 1" value="">
+            <input type="text" name="player2" id="player2Input" placeholder="player 2" value="">
+            <button id="startBtn">Start Game</button>
+        </div>
+        <div class="container" id="playScreen">
+            <h1 id="message"></h1>
             <div class="players">
                 <div id="player1">
-                    <h1>Score: 
+                    <h1 id="player1Name"></h1>
+                    <h2>Score: 
                         <span id="player1Scoreboard">0</span>
-                    </h1>
+                    </h2>
                     <div id="player1Dice" class="dice active">-</div>
                 </div>
                 <div id="player2">
-                    <h1>Score: 
+                    <h1 id="player2Name"></h1>
+                    <h2>Score: 
                         <span id="player2Scoreboard">0</span>
-                    </h1>
+                    </h2>
                     <div id="player2Dice" class="dice">-</div>
                 </div>
             </div>
 
             <button id="rollBtn">Roll Dice 🎲</button>
-            <button id="resetBtn">Reset Game 🔁</button>
+            <button id="resetBtn">Reset Game</button>
+            <button id ="newPlayersBtn">New players</button>
         </div>
         <script src="index.js"></script>
     </body>
